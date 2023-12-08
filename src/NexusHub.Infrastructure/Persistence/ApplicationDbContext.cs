@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using NexusHub.Infrastructure.Identity.Models;
 using NexusHub.Infrastructure.Persistence.Entities;
 
 namespace NexusHub.Infrastructure.Persistence;
 
-public class ApplicationDbContext : IdentityDbContext
+public class ApplicationDbContext : IdentityDbContext<ApplicationUser, UserRole, Guid>
 {
     public ApplicationDbContext(DbContextOptions options) : base(options)
     {
