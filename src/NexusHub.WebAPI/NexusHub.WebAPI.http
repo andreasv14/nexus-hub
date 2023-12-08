@@ -1,4 +1,4 @@
-@NexusHub.WebAPI_HostAddress = http://localhost:5109
+@NexusHub.WebAPI_HostAddress = http://localhost:5273
 
 GET {{NexusHub.WebAPI_HostAddress}}/weatherforecast/
 Accept: application/json

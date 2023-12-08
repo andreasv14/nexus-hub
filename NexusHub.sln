@@ -8,16 +8,23 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B69E42F1-CBDB-43E1-BE68-45DF3580A2BB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution-items", "solution-items", "{8CB6F599-C46A-4744-B69D-D2B1650C8464}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexusHub.Domain", "src\NexusHub.Domain\NexusHub.Domain.csproj", "{61DCF918-4BBF-4003-82BC-ED852BB8FD73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NexusHub.Domain", "src\NexusHub.Domain\NexusHub.Domain.csproj", "{61DCF918-4BBF-4003-82BC-ED852BB8FD73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexusHub.Application", "src\NexusHub.Application\NexusHub.Application.csproj", "{1B74FF3D-D529-4F17-8F5F-4AB0098C6278}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NexusHub.Application", "src\NexusHub.Application\NexusHub.Application.csproj", "{1B74FF3D-D529-4F17-8F5F-4AB0098C6278}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexusHub.Infrastructure", "src\NexusHub.Infrastructure\NexusHub.Infrastructure.csproj", "{38AD86D4-CF8E-4CC0-87A0-0AA9423D51C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NexusHub.Infrastructure", "src\NexusHub.Infrastructure\NexusHub.Infrastructure.csproj", "{38AD86D4-CF8E-4CC0-87A0-0AA9423D51C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexusHub.WebAPI", "src\NexusHub.WebAPI\NexusHub.WebAPI.csproj", "{BFD96951-9156-4F64-9CCD-75102E781744}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NexusHub.Application.UnitTests", "tests\NexusHub.Application.UnitTests\NexusHub.Application.UnitTests.csproj", "{1C8D86D5-4335-4C23-BE27-DF0FA61A6020}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexusHub.Application.UnitTests", "tests\NexusHub.Application.UnitTests\NexusHub.Application.UnitTests.csproj", "{1C8D86D5-4335-4C23-BE27-DF0FA61A6020}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{08228AFA-52E4-4DB3-9E20-78DA5031FE7F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NexusHub.WebAPI", "src\NexusHub.WebAPI\NexusHub.WebAPI.csproj", "{51BCF583-052F-4718-BF75-4BAF52DA1C72}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,24 +44,25 @@ Global
 		{38AD86D4-CF8E-4CC0-87A0-0AA9423D51C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38AD86D4-CF8E-4CC0-87A0-0AA9423D51C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38AD86D4-CF8E-4CC0-87A0-0AA9423D51C2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BFD96951-9156-4F64-9CCD-75102E781744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BFD96951-9156-4F64-9CCD-75102E781744}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BFD96951-9156-4F64-9CCD-75102E781744}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BFD96951-9156-4F64-9CCD-75102E781744}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1C8D86D5-4335-4C23-BE27-DF0FA61A6020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1C8D86D5-4335-4C23-BE27-DF0FA61A6020}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C8D86D5-4335-4C23-BE27-DF0FA61A6020}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C8D86D5-4335-4C23-BE27-DF0FA61A6020}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51BCF583-052F-4718-BF75-4BAF52DA1C72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51BCF583-052F-4718-BF75-4BAF52DA1C72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51BCF583-052F-4718-BF75-4BAF52DA1C72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51BCF583-052F-4718-BF75-4BAF52DA1C72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{61DCF918-4BBF-4003-82BC-ED852BB8FD73} = {43C47433-E6D1-41B3-AD2F-0A52983C5864}
-		{1B74FF3D-D529-4F17-8F5F-4AB0098C6278} = {43C47433-E6D1-41B3-AD2F-0A52983C5864}
+		{61DCF918-4BBF-4003-82BC-ED852BB8FD73} = {08228AFA-52E4-4DB3-9E20-78DA5031FE7F}
+		{1B74FF3D-D529-4F17-8F5F-4AB0098C6278} = {08228AFA-52E4-4DB3-9E20-78DA5031FE7F}
 		{38AD86D4-CF8E-4CC0-87A0-0AA9423D51C2} = {43C47433-E6D1-41B3-AD2F-0A52983C5864}
-		{BFD96951-9156-4F64-9CCD-75102E781744} = {43C47433-E6D1-41B3-AD2F-0A52983C5864}
 		{1C8D86D5-4335-4C23-BE27-DF0FA61A6020} = {B69E42F1-CBDB-43E1-BE68-45DF3580A2BB}
+		{08228AFA-52E4-4DB3-9E20-78DA5031FE7F} = {43C47433-E6D1-41B3-AD2F-0A52983C5864}
+		{51BCF583-052F-4718-BF75-4BAF52DA1C72} = {43C47433-E6D1-41B3-AD2F-0A52983C5864}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {33600DBA-2B23-43F6-9A1D-9CB7B9936FAA}
