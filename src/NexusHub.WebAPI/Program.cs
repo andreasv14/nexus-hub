@@ -9,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
     builder.Services
         .AddApplication()
         .AddInfrastructure(builder.Configuration)
+        .ConfigureSwaggerAPI()
         .ConfigureCors();
 }
 
